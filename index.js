@@ -16,7 +16,7 @@ function currentLine(DeliLine){
     return "The line is currently empty."
   } else {
     var linenumber = `1. ${[DeliLine[0]]},`
-    for (let i = 1; i < DeliLine.length -1; i++){
+    for (let i = 0; i < DeliLine.length -1; i++){
     linenumber =`${linenumber} ${i + 1}. ${DeliLine[i]},`
     }
     linenumber = `${linenumber} ${DeliLine.length}. ${DeliLine[DeliLine.length - 1]}`
