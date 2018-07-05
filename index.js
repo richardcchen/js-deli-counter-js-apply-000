@@ -1,6 +1,8 @@
-function takeANumber(KatzDeliLine, name){
-  KatzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${KatzDeliLine.length} in line.`
+var permlinenum = 0
+function takeANumber(KatzDeliLine){
+  permlinenum++;
+  KatzDeliLine.push(permlinenum);
+  return `You are number ${permlinenum} in line.`
 }
 
 function nowServing(DeliLine){
@@ -26,4 +28,8 @@ function currentLine(DeliLine){
 
 let line = []
 
+takeANumber(line)
+takeANumber(line)
+takeANumber(line)
+nowServing(line)
 takeANumber(line)
