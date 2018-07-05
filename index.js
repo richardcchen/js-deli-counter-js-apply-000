@@ -24,4 +24,6 @@ function currentLine(DeliLine){
   }
 }
 
-console.log(currentLine(["Rich", "Steven"]))
+let line = []
+
+takeANumber(line)
