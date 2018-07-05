@@ -15,7 +15,7 @@ function currentLine(DeliLine){
   if (DeliLine.length === 0){
     return "The line is currently empty."
   } else {
-    var linenumber = `1. ${[DeliLine[0]]},`
+    var linenumber = ''
     for (let i = 0; i < DeliLine.length -1; i++){
     linenumber =`${linenumber} ${i + 1}. ${DeliLine[i]},`
     }
@@ -23,3 +23,5 @@ function currentLine(DeliLine){
     return `The line is currently: ${linenumber}`
   }
 }
+
+console.log(currentLine(["Rich", "Steven"]))
